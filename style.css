@@ -1,0 +1,138 @@
+/* Mengatur gaya umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: white; /* Latar belakang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.glass-container {
+    background: rgba(232, 46, 46, 0.8); /* Latar belakang container*/
+    backdrop-filter: blur(10px);    
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ECF0F1; /* Putih cerah untuk teks */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.1); /* Transparan dengan sedikit warna */
+    color: #ECF0F1; /* Untuk teks input */
+    font-weight: 500;
+    transition: background 0.3s ease;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Shadow untuk visibilitas */
+}
+
+input::placeholder {
+    color: rgba(236, 240, 241, 0.6); /* Placeholder dengan warna lebih lembut */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Shadow pada placeholder */
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3); /* Warna fokus lebih terang */
+}
+
+button {
+    padding: 0 20px;
+    font-size: 30px;
+    background-color: #2980B9; /* Biru lebih cerah untuk tombol */
+    color: #ECF0F1; /* Teks tombol putih cerah */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #3498DB; /* Biru lebih cerah saat hover */
+    transform: scale(1.1);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+li {
+    background: rgba(44, 62, 80, 0.7); /* Latar belakang item daftar */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    color: #ECF0F1; /* Teks item daftar putih cerah */
+    font-weight: 500;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Shadow untuk teks */
+}
+
+li.completed {
+    text-decoration: line-through;
+    background: rgba(76, 209, 55, 0.3); /* Latar belakang untuk tugas selesai */
+}
+
+li button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+li button.edit {
+    color: #1ABC9C; /* Warna biru untuk tombol edit */
+}
+
+li button.delete {
+    color: #E74C3C; /* Merah untuk tombol hapus */
+}
+
+li button.save {
+    color: #2ED573; /* Hijau untuk tombol simpan */
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hover dengan sedikit warna */
+}
+
+/* Scrollbar style */
+ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
